@@ -1,8 +1,7 @@
 import React from "react";
-import CardList from "./CardList";
-//import { robots } from "./robots";
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
+import CardList from "../components/CardList";
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 import './App.css'
 
 
@@ -26,8 +25,6 @@ class App extends React.Component {
     onSearchChange = (event) => {
         this.setState({ searchfield: event.target.value })
         //This is self built component so needs arrow function so this.state.robots works
-
-
         //console.log(filteredRobots)
     }
 
@@ -44,8 +41,8 @@ class App extends React.Component {
                     <h1 className='f1'>RoboFriends</h1>
                     <SearchBox searchChange={this.onSearchChange} />
                     <Scroll>
-                <CardList robots={filteredRobots} />
-                </Scroll>
+                        <CardList robots={filteredRobots} />
+                    </Scroll>
                 </div>
             )
         }

@@ -2,7 +2,7 @@ import React from 'react';
 
 //comments are showing a second way of doing this
 //const Card = (props) => {
-    const Card = ({name, email, id}) => {
+const Card = ({ name, email, id }) => {
     //const {name, email} = props;
     return (
 
